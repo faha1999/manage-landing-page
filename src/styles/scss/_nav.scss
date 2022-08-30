@@ -1,11 +1,30 @@
 nav {
   display: flex;
-  padding: 1rem;
+  padding: 3rem;
   flex-direction: row;
+  margin-top: 2rem;
+
+  .logo {
+    margin-top: 8px;
+    margin-left: 0;
+    width: initial;
+  }
 
   .items {
-    display: flex;
-    flex-direction: row;
+    margin: 0 auto;
+
+    a {
+      padding-right: 2rem;
+      color: $very-dark-blue;
+
+      &:hover {
+        color: $dark-grayish-blue;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
   }
 
   .togglerIcon {
@@ -16,12 +35,13 @@ nav {
 @media screen and (max-width: 767px) {
   nav {
     display: block;
+    margin-top: 0;
 
     .hide {
-      display: none;
+      display: none !important;
     }
 
-    button {
+    .navBtn {
       display: none;
     }
 
@@ -39,13 +59,27 @@ nav {
     .items {
       display: flex;
       flex-direction: column;
-      background-color: red;
+      background: $very-light-gray;
+      position: absolute;
       text-align: center;
-      padding: 1rem;
-      margin-top: 1rem;
+      padding: 2rem 0;
+      margin-top: 2rem;
+      width: 90%;
+      height: auto;
+      max-width: 325px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
 
       a {
         padding-bottom: 1rem;
+        padding-right: 0;
+        color: $dark-blue;
+        font-weight: 700;
+
+        &:last-child {
+          padding-bottom: 0;
+        }
       }
     }
   }

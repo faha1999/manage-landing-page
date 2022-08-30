@@ -10,31 +10,33 @@ export const Header = () => {
 
   return (
     <>
-      <nav>
-        <div className="mobile">
-          <img src={logo} alt="manage" className="logo" />
+      <div className="container">
+        <nav>
+          <div className="mobile">
+            <img src={logo} alt="manage" className="logo" />
 
-          <div className="togglerIcon">
-            {isOpen ? (
-              <img src={close} alt="" onClick={toggle} />
-            ) : (
-              <img src={hamburger} alt="" onClick={toggle} />
-            )}
+            <div className="togglerIcon">
+              {isOpen ? (
+                <img src={close} alt="" onClick={toggle} />
+              ) : (
+                <img src={hamburger} alt="" onClick={toggle} />
+              )}
+            </div>
           </div>
-        </div>
 
-        <div className={isOpen ? 'items ' : 'hide'}>
-          <a href="#">Pricing</a>
-          <a href="#">Product</a>
-          <a href="#">About us</a>
-          <a href="#">Careers</a>
-          <a href="#">Community</a>
-        </div>
+          <div className={isOpen ? 'items' : 'items hide'}>
+            <a href="#">Pricing</a>
+            <a href="#">Product</a>
+            <a href="#">About us</a>
+            <a href="#">Careers</a>
+            <a href="#">Community</a>
+          </div>
 
-        <div className="ms-auto">
-          <button>Get Started</button>
-        </div>
-      </nav>
+          <div>
+            <button className="navBtn">Get Started</button>
+          </div>
+        </nav>
+      </div>
     </>
   );
 };
