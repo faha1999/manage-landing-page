@@ -4,12 +4,12 @@ import illustration from '../assets/images/illustration-intro.svg';
 export const Hero = () => {
   return (
     <>
-      <div className="container hero">
-        <div className="row">
+      <section className="container hero">
+        <div className="row" style={{ flexDirection: 'row-reverse' }}>
           <div className="col-md-6 col-sm-12 img">
             <img
               height="100%"
-              width="90%"
+              width="100%"
               src={illustration}
               alt="illustration"
             />
@@ -24,7 +24,7 @@ export const Hero = () => {
             <button class="">Get Started</button>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

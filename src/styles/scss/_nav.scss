@@ -33,6 +33,16 @@ nav {
 }
 
 @media screen and (max-width: 767px) {
+  .overlay {
+    // opacity: 0;
+    position: fixed;
+    top: 7rem;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: linear-gradient(transparent, #2d314d);
+  }
+
   nav {
     display: block;
     margin-top: 0;

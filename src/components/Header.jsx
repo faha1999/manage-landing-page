@@ -11,6 +11,7 @@ export const Header = () => {
   return (
     <>
       <div className="container">
+        <div className={isOpen ? 'overlay' : ''}></div>
         <nav>
           <div className="mobile">
             <img src={logo} alt="manage" className="logo" />
