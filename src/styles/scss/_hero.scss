@@ -31,12 +31,12 @@
       line-height: 5rem;
       color: $dark-blue;
       font-weight: $bold;
+      width: 70%;
     }
 
     p {
-      color: #9095a7;
-      line-height: 2.7rem;
-      margin-bottom: 3rem;
+      margin-right: auto;
+      width: 60%;
     }
 
     button {
@@ -52,10 +52,12 @@
       h1,
       p {
         text-align: center;
+        width: 100%;
       }
 
       button {
         margin: 0 auto;
+        padding: 0.8rem 4rem !important;
       }
     }
   }
