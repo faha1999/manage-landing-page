@@ -20,6 +20,7 @@ html {
   -ms-overflow-style: none; /* For Internet Explorer and Edge */
   scroll-behavior: smooth;
   font-size: 10px;
+  overflow-x: hidden;
 }
 
 body {
@@ -28,6 +29,7 @@ body {
   scroll-behavior: smooth;
   font-family: 'Be Vietnam', sans-serif;
   font-size: 1.6rem;
+  position: relative;
 }
 
 a {
@@ -50,4 +52,13 @@ button {
   &:hover {
     background-color: #f79a82;
   }
+}
+
+.bgTop {
+  max-width: 63.6rem;
+  position: absolute;
+  right: -13rem;
+  top: -11rem;
+  width: 116%;
+  z-index: -555;
 }
