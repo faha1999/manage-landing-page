@@ -1,0 +1,56 @@
+body {
+  background-color: gray;
+}
+
+nav {
+  display: flex;
+  padding: 1rem;
+  flex-direction: row;
+
+  .items {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .togglerIcon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  nav {
+    display: block;
+
+    .hide {
+      display: none;
+    }
+
+    button {
+      display: none;
+    }
+
+    .mobile {
+      display: flex;
+      justify-content: space-between;
+
+      .togglerIcon {
+        display: block;
+        float: left;
+        cursor: pointer;
+      }
+    }
+
+    .items {
+      display: flex;
+      flex-direction: column;
+      background-color: red;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 1rem;
+
+      a {
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}
