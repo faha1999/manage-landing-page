@@ -4,6 +4,7 @@ import bgTop from './assets/images/bg-tablet-pattern.svg';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { Testimonials } from './components/Testimonials';
+import { Newsletter } from './components/Newsletter';
 
 export const App = () => {
   return (
@@ -13,6 +14,7 @@ export const App = () => {
       <Hero />
       <About />
       <Testimonials />
+      <Newsletter />
     </>
   );
 };
