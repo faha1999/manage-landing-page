@@ -39,7 +39,12 @@ export const Testimonials = () => {
           {testimonialsData.map((data) => (
             <SwiperSlide key={data.title}>
               <div className="cardBody">
-                <img src={data.img} alt={data.title} />
+                <img
+                  width="100%"
+                  height="100%"
+                  src={data.img}
+                  alt={data.title}
+                />
                 <h3>{data.title}</h3>
 
                 <div className="cardText pt-4 pb-4">

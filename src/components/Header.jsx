@@ -14,13 +14,31 @@ export const Header = () => {
         <div className={isOpen ? 'overlay' : ''}></div>
         <nav>
           <div className="mobile">
-            <img src={logo} alt="manage" className="logo" />
+            <img
+              width="100%"
+              height="100%"
+              src={logo}
+              alt="manage"
+              className="logo"
+            />
 
             <div className="togglerIcon">
               {isOpen ? (
-                <img src={close} alt="" onClick={toggle} />
+                <img
+                  src={close}
+                  width="100%"
+                  height="100%"
+                  alt="close"
+                  onClick={toggle}
+                />
               ) : (
-                <img src={hamburger} alt="" onClick={toggle} />
+                <img
+                  src={hamburger}
+                  width="100%"
+                  height="100%"
+                  alt="open"
+                  onClick={toggle}
+                />
               )}
             </div>
           </div>
