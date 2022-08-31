@@ -30,7 +30,7 @@ export const About = () => {
           </div>
         </div>
 
-        <img width="100%" height="100%" src={bgMiddle} alt="bgMiddle" />
+        <img src={bgMiddle} alt="bgMiddle" />
       </section>
     </>
   );

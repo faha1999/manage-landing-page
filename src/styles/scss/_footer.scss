@@ -2,6 +2,11 @@ footer {
   background: $very-dark-blue;
   height: auto;
 
+  img {
+    width: 2rem;
+    height: 2rem;
+  }
+
   a {
     color: $very-pale-red;
     font-size: 1.2rem;
