@@ -26,7 +26,7 @@ export const Testimonials = () => {
             },
             1024: {
               slidesPerView: 3,
-              spaceBetween: 20,
+              spaceBetween: 30,
             },
           }}
           modules={[Autoplay, Pagination]}
@@ -34,7 +34,7 @@ export const Testimonials = () => {
             delay: 2500,
             disableOnInteraction: false,
           }}
-          className="mySwiper"
+          className="pt-5 mt-5"
         >
           {testimonialsData.map((data) => (
             <SwiperSlide key={data.title}>
@@ -42,13 +42,15 @@ export const Testimonials = () => {
                 <img src={data.img} alt={data.title} />
                 <h3>{data.title}</h3>
 
-                <div className="cardText">
+                <div className="cardText pt-4 pb-4">
                   <p>{data.details}</p>
                 </div>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
+
+        <button className="mt-5">Get Started</button>
       </section>
     </>
   );
